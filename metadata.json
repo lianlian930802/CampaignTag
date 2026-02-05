@@ -1,0 +1,5 @@
+{
+  "name": "Campaign Tagging Explorer",
+  "description": "A Looker-inspired interface for categorizing advertising campaigns with intelligent tagging, designed to streamline data preparation for Feishu Bitable reports.",
+  "requestFramePermissions": []
+}
