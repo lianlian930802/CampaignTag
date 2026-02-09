@@ -20,6 +20,7 @@ const App: React.FC = () => {
             campaigns={campaigns} 
             setCampaigns={setCampaigns} 
             tagCategories={tagCategories} 
+            setTagCategories={setTagCategories}
           />
         );
       case 'tag-management':

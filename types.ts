@@ -23,10 +23,15 @@ export interface TagCategory {
   tags: TagDefinition[];
 }
 
-export interface TagCombination {
+export interface ParsingRule {
   id: string;
   name: string;
-  tags: string[]; // List of tag labels
+  delimiter: string;
+  mappings: {
+    index: number;
+    categoryName: string;
+  }[];
+  createdAt: string;
 }
 
 export interface BitableTemplate {
@@ -50,5 +55,4 @@ export type ViewType =
   | 'template-mgmt'
   | 'tag-management' 
   | 'account-mgmt' 
-  | 'asset-mgmt'
-  | 'snapchat-delivery';
+  | 'asset-mgmt';
